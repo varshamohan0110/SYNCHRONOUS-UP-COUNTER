@@ -28,19 +28,40 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **Procedure**
 
-/* write all the steps invloved */
+/* 
+Step1: Define the specifications and initialize the design.
+Step2: Declare the name of the entity and architecture by using VHDL source code.
+Step3: Write the source code in VERILOG.
+Step4: Check the syntax and debug the errors if found, obtain the synthesis report.
+Step5: Verify the output by simulating the source code.
+Step6: Write all possible combinations of input using the test bench.
+Step7: Obtain the place and route report. 
+*/
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+/* 
+module ex11(out,clk,rst);
+input clk,rst;
+output reg [3:0]out;
+always @ (posedge clk)
+begin
+   if(rst)
+     out<=0;
+   else 
+     out <= out+1;
+end
+endmodule
 
-Developed by: RegisterNumber:
+Developed by:Varsha M  RegisterNumber:25001006
 */
 
 **RTL LOGIC UP COUNTER**
+<img width="1920" height="1020" alt="Screenshot 2025-10-07 184643" src="https://github.com/user-attachments/assets/d4dc616b-0851-4196-8ceb-3fb846d94fd5" />
+
 
 **TIMING DIAGRAM FOR IP COUNTER**
-
-**TRUTH TABLE**
+<img width="1920" height="1020" alt="Screenshot 2025-10-07 184938" src="https://github.com/user-attachments/assets/209f3e19-40ec-4a5d-b812-59037e7f92df" />
 
 **RESULTS**
+Thus the OUTPUT’s of Synchronous is verified by synthesizing and simulating the  VERILOG code.
